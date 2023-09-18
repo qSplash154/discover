@@ -35,11 +35,12 @@ body * {
 }
 /*container*/
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
 
   /* o padding serve para poder centralizar em baixo como 0 que não muda nada e nas laterais com 24 que padroniza as duas, automaticamente toda a pagina segue o padrão e não precisa alterar manual dps todas, pois o container padroniza.*/
   padding: 0 24px;
-  margin: 56px auto 0px auto;
+  margin: 56px auto 0px;
   text-align: center;
 }
 /*profile*/
