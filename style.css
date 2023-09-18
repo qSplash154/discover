@@ -24,10 +24,8 @@
   --switch-bg-url: url(./assets/sun.svg);
 }
 body {
-  background: var(--bg-url);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -146,4 +144,15 @@ ul li a:hover {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/*media queries  só funciona com o meta viewport ativo no html*/
+
+@media (min-width: 700px){
+:root{
+  --bg-url: url(./assets/bg-desktop.jpg)
+}
+.light{
+  --bg-url: url(./assets/bg-desktop-light.jpg)
+}
 }
